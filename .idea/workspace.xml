@@ -50,7 +50,7 @@
       <workItem from="1634664723996" duration="345000" />
       <workItem from="1634676555444" duration="15791000" />
       <workItem from="1634773033876" duration="11319000" />
-      <workItem from="1634857438827" duration="5397000" />
+      <workItem from="1634857438827" duration="6447000" />
     </task>
     <servers />
   </component>
@@ -58,6 +58,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="761" y="338" key="Github.ShareDialog" timestamp="1634864363639">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="761" y="338" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1634864363639" />
     <state x="406" y="108" width="821" height="614" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1634781039755">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
