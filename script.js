@@ -11,31 +11,35 @@ kaboom({
 
 loadSprite("square", "sprites/s.png");
 loadSprite("circle", "sprites/c.png");
-loadSprite("tria", "sprites/t.png");
+loadSprite("triangle", "sprites/t.png");
 
 
 const shapes = []
 
 const square = add([
   sprite("square"),
-  pos(30, 35),
+  pos(140, 190),
   area(100, 100),
   origin("center")
 ])
 
 const circle = add([
   sprite("circle"),
-  pos(100, 100),
+  pos(480, 90),
   area(100, 100),
   origin("center")
 ])
 
 const triangle = add([
-  sprite("tria"),
-  pos(140, 180),
+  sprite("triangle"),
+  pos(455, 320),
   area(100, 100),
-  origin("center")
+  origin("center"),
 ])
+
+let t = 0
+let c = 0
+let s = 0
 
 function makeShapes(geometric) {
   const newPos = pos(rand(50, width() - 50), rand(50, height() - 50))
@@ -45,18 +49,18 @@ function makeShapes(geometric) {
     newPos,
     origin("center"),
     area(100, 100),
+    "geo"
   ])
 
   return shape
 }
 
 // makeShapes("triangle")
-makeShapes("circle")
-makeShapes("square")
+// makeShapes("circle")
+// makeShapes("square")
 
 
 
-const line = [square, circle, triangle]
 
 
 const cfg = {
@@ -64,11 +68,18 @@ const cfg = {
   width: 10,
 }
 
+// debuging code
 mouseClick(() => {
-  const pos = mousePos()
-  debug.log(`${pos.x}-${pos.y}`)
-
+  // debug pos
+  // const pos = mousePos()
+  // debug.log(`${pos.x}-${pos.y}`)
 })
+
+onClick("geo", () => {
+  debug.log('done')
+})
+
+const line = [square, circle, triangle]
 
 render(() => {
   for (let i = 0; i < line.length -1; i++) {
