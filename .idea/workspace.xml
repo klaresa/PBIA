@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fb14468-8a69-4d72-abd3-6b4620273195" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new-try.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +37,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -49,30 +47,17 @@
       <recent name="C:\Users\klari\Desktop\PB" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
+  <component name="RunManager" selected="Node.js.new-try.js">
     <configuration name="dijkstra.test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/node_modules/dijkstrajs/test/dijkstra.test.js" working-dir="$PROJECT_DIR$/node_modules/dijkstrajs/test">
       <method v="2" />
     </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="testi.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/testi.js" working-dir="$PROJECT_DIR$">
+    <configuration name="new-try.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/new-try.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="dijkstra.js..single_source_shortest_paths()" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package />
-      <working-directory>$PROJECT_DIR$/node_modules/dijkstrajs</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/node_modules/dijkstrajs/test/dijkstra.test.js</test-file>
-      <test-names>
-        <name value="dijkstra.js" />
-        <name value=".single_source_shortest_paths()" />
-      </test-names>
+    <configuration name="testi.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/testi.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="dijkstra.js..single_source_shortest_paths().should find all paths from a node" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -94,11 +79,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.new-try.js" />
         <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.testi.js" />
         <item itemvalue="Node.js.dijkstra.test.js" />
         <item itemvalue="Mocha.dijkstra.js..single_source_shortest_paths().should find all paths from a node" />
-        <item itemvalue="Mocha.dijkstra.js..single_source_shortest_paths()" />
       </list>
     </recent_temporary>
   </component>
@@ -131,14 +116,31 @@
       <workItem from="1638315100834" duration="11391000" />
       <workItem from="1638397157007" duration="16895000" />
       <workItem from="1638472051333" duration="1088000" />
-      <workItem from="1638480229474" duration="1848000" />
+      <workItem from="1638480229474" duration="20380000" />
+      <workItem from="1638540766393" duration="21161000" />
     </task>
+    <task id="LOCAL-00001" summary="suffering and pain">
+      <created>1638483778539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638483778539</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="suffering and pain" />
+    <option name="LAST_COMMIT_MESSAGE" value="suffering and pain" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="-1017" y="27" key="CommitChangelistDialog2" timestamp="1638483777959">
+      <screen x="-2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="-1017" y="27" key="CommitChangelistDialog2/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638483777959" />
     <state x="-1873" y="298" key="FileChooserDialogImpl" timestamp="1635819113815">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
@@ -147,30 +149,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="761" y="338" key="Github.ShareDialog/0.0.1536.864@0.0.1536.864" timestamp="1634864363639" />
-    <state width="1147" height="213" key="GridCell.Tab.0.bottom" timestamp="1638333400354">
+    <state width="917" height="213" key="GridCell.Tab.0.bottom" timestamp="1638597250217">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1147" height="213" key="GridCell.Tab.0.bottom/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638333400354" />
+    <state width="917" height="213" key="GridCell.Tab.0.bottom/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638597250217" />
     <state width="1231" height="217" key="GridCell.Tab.0.bottom/0.0.1536.864/-2560.0.2560.1080@0.0.1536.864" timestamp="1637114163042" />
-    <state width="1147" height="213" key="GridCell.Tab.0.center" timestamp="1638333400354">
+    <state width="917" height="213" key="GridCell.Tab.0.center" timestamp="1638597250217">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1147" height="213" key="GridCell.Tab.0.center/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638333400354" />
+    <state width="917" height="213" key="GridCell.Tab.0.center/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638597250217" />
     <state width="1231" height="217" key="GridCell.Tab.0.center/0.0.1536.864/-2560.0.2560.1080@0.0.1536.864" timestamp="1637114163041" />
-    <state width="1147" height="213" key="GridCell.Tab.0.left" timestamp="1638333400354">
+    <state width="917" height="213" key="GridCell.Tab.0.left" timestamp="1638597250217">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1147" height="213" key="GridCell.Tab.0.left/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638333400354" />
+    <state width="917" height="213" key="GridCell.Tab.0.left/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638597250217" />
     <state width="1231" height="217" key="GridCell.Tab.0.left/0.0.1536.864/-2560.0.2560.1080@0.0.1536.864" timestamp="1637114163041" />
-    <state width="1147" height="213" key="GridCell.Tab.0.right" timestamp="1638333400354">
+    <state width="917" height="213" key="GridCell.Tab.0.right" timestamp="1638597250217">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1147" height="213" key="GridCell.Tab.0.right/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638333400354" />
+    <state width="917" height="213" key="GridCell.Tab.0.right/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638597250217" />
     <state width="1231" height="217" key="GridCell.Tab.0.right/0.0.1536.864/-2560.0.2560.1080@0.0.1536.864" timestamp="1637114163041" />
-    <state x="-1883" y="135" width="1369" height="768" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1638480360588">
+    <state x="-1730" y="0" key="SettingsEditor" timestamp="1638486284446">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state x="-1883" y="135" width="1369" height="768" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638480360588" />
+    <state x="-1730" y="0" key="SettingsEditor/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638486284446" />
+    <state x="-1062" y="272" key="Vcs.Push.Dialog.v2" timestamp="1638483837013">
+      <screen x="-2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="-1062" y="272" key="Vcs.Push.Dialog.v2/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638483837013" />
+    <state x="-1883" y="135" width="1369" height="768" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1638586637966">
+      <screen x="-2560" y="0" width="2560" height="1080" />
+    </state>
+    <state x="-1883" y="135" width="1369" height="768" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638586637966" />
     <state x="-1883" y="135" width="1369" height="768" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.864/-2560.0.2560.1080@0.0.1536.864" timestamp="1638473557476" />
     <state x="-931" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1638325363231">
       <screen x="-2560" y="0" width="2560" height="1080" />
