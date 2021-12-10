@@ -1,0 +1,13 @@
+dijkstras:
+
+https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+
+https://www.baeldung.com/cs/graph-number-of-shortest-paths
+
+https://www.cs.princeton.edu/~rs/AlgsDS07/15ShortestPaths.pdf
+
+https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/tutorial/
+
+Comparasion:
+
+https://brilliant.org/wiki/shortest-path-algorithms/
