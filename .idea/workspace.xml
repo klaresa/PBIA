@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fb14468-8a69-4d72-abd3-6b4620273195" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="1fb14468-8a69-4d72-abd3-6b4620273195" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +123,7 @@
       <workItem from="1639071971160" duration="130000" />
       <workItem from="1639072165781" duration="8657000" />
       <workItem from="1639084182654" duration="8643000" />
-      <workItem from="1639104388276" duration="1343000" />
+      <workItem from="1639104388276" duration="1524000" />
     </task>
     <task id="LOCAL-00001" summary="suffering and pain">
       <created>1638483778539</created>
@@ -156,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638673332703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="saving drawing fix">
+      <created>1639106225698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1639106225698</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,13 +170,15 @@
     <MESSAGE value="suffering and pain" />
     <MESSAGE value="adj list" />
     <MESSAGE value="search list dikjstra" />
-    <option name="LAST_COMMIT_MESSAGE" value="search list dikjstra" />
+    <MESSAGE value="saving drawing fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="saving drawing fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1017" y="27" key="CommitChangelistDialog2" timestamp="1638673332075">
-      <screen x="-2560" y="0" width="2560" height="1080" />
+    <state x="774" y="0" key="CommitChangelistDialog2" timestamp="1639106224630">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="-1017" y="27" key="CommitChangelistDialog2/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638673332075" />
+    <state x="774" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1639106224630" />
     <state x="-1873" y="298" key="FileChooserDialogImpl" timestamp="1635819113815">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
@@ -205,10 +211,11 @@
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
     <state x="-1730" y="0" key="SettingsEditor/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638486284446" />
-    <state x="-1062" y="272" key="Vcs.Push.Dialog.v2" timestamp="1638652065184">
-      <screen x="-2560" y="0" width="2560" height="1080" />
+    <state x="722" y="218" key="Vcs.Push.Dialog.v2" timestamp="1639106231672">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="-1062" y="272" key="Vcs.Push.Dialog.v2/0.0.1536.864/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1638652065184" />
+    <state x="722" y="218" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1639106231672" />
     <state x="-1883" y="135" width="1369" height="768" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1638586637966">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
