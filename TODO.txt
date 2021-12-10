@@ -1,6 +1,0 @@
-A FAZER:
-- colocar a foto do jogo minimetro na seção de problema
-
-- colocar fotos dos algoritmos  de busca cega e informada
-
-- descrever a metodologia (como vc está resolvendo o problema / quais ferramentas usou / problemas enfrentados / workarounds / objetivo )
