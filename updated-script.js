@@ -17,6 +17,12 @@ loadSprite("yellowD", "sprites/yellow-dot.png");
 loadSprite("clear", "sprites/clear.PNG");
 loadSprite("idea", "sprites/idea.PNG");
 loadSprite("close", "sprites/x.PNG");
+loadSprite("current", "sprites/current.png");
+loadSprite("current2", "sprites/current2.png");
+loadSprite("loc", "sprites/loc.png");
+loadSprite("tag", "sprites/tag.png");
+loadSprite("target", "sprites/target.png");
+
 
 
 const clear = add([
@@ -45,35 +51,108 @@ const sq = add([
   "sta"
 ])
 
-// const redD = add([
-//   sprite("redD"),
-//   pos(575, 180),
-//   area(100, 100),
-//   scale(0.1),
-//   opacity(0.5),
-//   origin("center"),
-//   "red"
-// ])
-//
-// const yellowD = add([
-//   sprite("yellowD"),
-//   pos(575, 150),
-//   area(50, 50),
-//   scale(0.1),
-//   opacity(0.5),
-//   origin("center"),
-//   "yellow"
-// ])
-//
-// const blueD = add([
-//   sprite("blueD"),
-//   pos(575, 120),
-//   area(50, 50),
-//   scale(0.1),
-//   opacity(0.5),
-//   origin("center"),
-//   "blue"
-// ])
+const redD = add([
+  sprite("redD"),
+  pos(575, 180),
+  area(100),
+  scale(0.1),
+  opacity(0.5),
+  origin("center"),
+  "red"
+])
+
+const yellowD = add([
+  sprite("yellowD"),
+  pos(575, 150),
+  area(50, 50),
+  scale(0.1),
+  opacity(0.5),
+  origin("center"),
+  "yellow"
+])
+
+const blueD = add([
+  sprite("blueD"),
+  pos(575, 120),
+  area(50, 50),
+  scale(0.1),
+  opacity(0.5),
+  origin("center"),
+  "blue"
+])
+
+const paths = {
+  origin: {
+    status: false,
+    selected: 0
+  },
+  destiny: {
+    status: false,
+    selected: 0
+  }
+}
+
+const current = add([
+  sprite("tag"),
+  pos(width() - 70, 30),
+  area(30),
+  scale(1),
+  opacity(0.7),
+  origin("center"),
+  "current"
+])
+
+const current_id = add([
+  pos(current.pos.x, current.pos.y + 27),
+  color(0, 0, 0),
+  origin("center"),
+  text(0, {
+        size: 14,
+        font: 'apl386'
+      }
+  )
+])
+
+const target = add([
+  sprite("target"),
+  pos(width() - 20, 30),
+  area(30),
+  scale(0.6),
+  opacity(0.7),
+  origin("center"),
+  "target"
+])
+
+const target_id = add([
+  pos(target.pos.x, target.pos.y + 27),
+  color(0, 0, 0),
+  origin("center"),
+  text(0, {
+        size: 14,
+        font: 'apl386'
+      }
+  )
+])
+
+onClick("current", () => {
+  paths.origin.status = !paths.origin.status
+  if (paths.origin.status === true) {
+    current.opacity = 1
+  } else {
+    current.opacity = 0.5
+  }
+  console.log('origin', paths)
+})
+
+onClick("target", () => {
+  paths.destiny.status = !paths.destiny.status
+  if (paths.destiny.status === true) {
+    target.opacity = 1
+  } else {
+    target.opacity = 0.5
+  }
+  console.log('destiny', paths)
+})
 
 // add([
 //   sprite("close"),
@@ -83,6 +162,15 @@ const sq = add([
 //   origin("center"),
 //   "ex"
 // ])
+
+const highlight = add([
+  pos(0, 0),
+  circle(20),
+  origin('center'),
+  color(200, 200, 200),
+  opacity(0),
+  'highlight'
+])
 
 // placar
 const score = add([
@@ -145,7 +233,7 @@ let where
 // runs on every frame - eventos de onDraw devem ficar aqui
 onDraw(() => {
   drawGraph()
-  mouseLine()
+  // mouseLine()
 })
 
 /*
@@ -163,7 +251,7 @@ let shortPath
 let points = []
 
 onClick("idea", () => {
-  shortPath = dijkstra.find_path(graph, 2, 39)
+  shortPath = dijkstra.find_path(graph, paths.origin.selected, paths.destiny.selected)
   console.log('spath', shortPath)
 
   const stas = get("sta")
@@ -181,7 +269,9 @@ onClick("idea", () => {
   })
 })
 
-
+/*
+* Desenha os pontos do grafo.
+*/
 function drawPath() {
   for (let i in points) {
     drawLines({
@@ -194,7 +284,6 @@ function drawPath() {
 
 // renders after all renders - runs all the time
 action(() => {
-  mouseLine()
 })
 
 /*
@@ -250,7 +339,6 @@ function getClosestObject(objs, pos) {
 */
 let t = 0
 let c = 0
-
 function makeShapes() {
   const pickShape = choose(["triangle", "circle"])
   let stas = get("sta")
@@ -304,11 +392,15 @@ var myLastClick
 onClick("sta", (currentObj) => {
   if (currentObj === myLastClick) return
 
+  if (paths.origin.status === true || paths.destiny.status === true) {
+    checkPathSelection(currentObj)
+    return
+  }
+
   if (isMousePressed()) {
     console.log('Adicionando..', currentObj._id)
 
     if (myLastClick) {
-
       let existingObj = line[myLastClick._id]
       let distance = currentObj.pos.dist(myLastClick.pos)
 
@@ -325,32 +417,38 @@ onClick("sta", (currentObj) => {
     console.log('line', line)
     graph = line
   }
+
   myLastClick = currentObj
+  highlightLastSelected()
 })
+
+function checkPathSelection(obj) {
+  if (paths.origin.status === true) {
+    paths.origin.selected = obj._id
+    current_id.text = obj._id
+  } else if (paths.destiny.status === true) {
+    paths.destiny.selected = obj._id
+    target_id.text = obj._id
+  }
+}
+
+/*
+* Funcao que destaca a ultima estacao selecionada
+*/
+function highlightLastSelected() {
+  const last = myLastClick.pos
+
+  if (highlight) {
+    highlight.pos = vec2(last.x, last.y)
+    highlight.opacity = 0.5
+  }
+}
 
 /*
 Reseta as ligações
 */
 onClick("ex", () => {
-  // myLastClick = ''
-
-  // const stas = get('sta')
-  // console.log(stas)
-  //
-  // for (let i; i <= 10; i++) {
-  //   const pick = choose(stas)
-  //
-  //   let existingObj = line.toL
-  //   let distance = currentObj.pos.dist(myLastClick.pos)
-  //
-  //   line[pick._id] = {
-  //     ...existingObj,
-  //     [pick._id]: distance,
-  //     // pos: currentObj.pos
-  //   }
-  //
-  // }
-  // console.log(pick)
+  console.log('does nothing')
 })
 
 function mouseLine() {
@@ -372,23 +470,6 @@ function whereDidIClick() {
   onClick("sta", (obj) => {
     where = {x: obj.pos.x, y: obj.pos.y}
   })
-}
-
-function getShapesPositions() {
-  let obs = []
-
-  const allObjs = get("sta")
-
-  for (i in allObjs) {
-    obs.push({
-      _id: allObjs[i]._id,
-      x: allObjs[i].pos.x,
-      y: allObjs[i].pos.y,
-      obj: allObjs[i]
-    })
-  }
-
-  return obs
 }
 
 function showIds() {
