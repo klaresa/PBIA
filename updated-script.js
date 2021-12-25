@@ -426,9 +426,12 @@ function checkPathSelection(obj) {
   if (paths.origin.status === true) {
     paths.origin.selected = obj._id
     current_id.text = obj._id
+    current_id.color = rgb(255, 0, 0)
+
   } else if (paths.destiny.status === true) {
     paths.destiny.selected = obj._id
     target_id.text = obj._id
+    target_id.color = rgb(0, 150, 150)
   }
 }
 
